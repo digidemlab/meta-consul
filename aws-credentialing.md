@@ -33,4 +33,9 @@ consul_deploy_region = "eu-central-1"
 ``` bash
 $ terraform apply --var-file=../../consulfar.tfvars
 ```
+then destroy the file
+``` bash
+$ terraform destroy --var-file=../../consulvars.tfvars
+```
+
 You will see the basic network being created

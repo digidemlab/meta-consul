@@ -1,6 +1,6 @@
 # Credentialing on AWS
 
-* Create your IAM user;  
+* Create your [IAM](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) user;  
 * Sign in with the password;  
 * Download the credentials keys under the **Security Credentials** tab, and create an **Access Key**;  
 * When prompted, download the `CSV` file with the keys;  
@@ -33,9 +33,10 @@ consul_deploy_region = "eu-central-1"
 ``` bash
 $ terraform apply --var-file=../../consulfar.tfvars
 ```
-then destroy the file
+You will see the basic network being created
+
+
+If you need to destroy the network, just run:  
 ``` bash
 $ terraform destroy --var-file=../../consulvars.tfvars
 ```
-
-You will see the basic network being created
